@@ -10,6 +10,6 @@ export const CreateChatSchema = z.object({
 export interface Message{
     content:string,
     role:Role;
-}
+}[]
 
-type Role = "agent" | "user";
+export enum Role {Agent = "assistant" ,User = "user"}
